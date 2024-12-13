@@ -12,7 +12,7 @@ HF_TOKEN = "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"
 model_name = "meta-llama/CodeLlama-7b-hf"
 generator = pipeline("text-generation", model=model_name, use_auth_token=HF_TOKEN)
 
-BATCH_SIZE = 64  # Define the batch size for batching prompts
+BATCH_SIZE = 8  # Define the batch size for batching prompts
 
 
 def process_batch(prompts):
